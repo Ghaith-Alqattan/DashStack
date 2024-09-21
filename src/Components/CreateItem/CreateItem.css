@@ -12,6 +12,9 @@
   .createImage {
     width: 100px !important;
   }
+  .info {
+    width: 100% !important;
+  }
 }
 .createMain {
   overflow-x: hidden;
