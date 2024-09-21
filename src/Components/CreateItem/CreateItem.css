@@ -1,0 +1,12 @@
+@media screen and (max-width: 992px) {
+  .create {
+    margin-top: 20px !important;
+  }
+  .shareLabel {
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+}
