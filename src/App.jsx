@@ -1,11 +1,10 @@
 
-import Signup from './Pages/Log/SignUp/Signup'
+import Signup from './Pages/Log/SignUp/SignUp'
 import Signin from './Pages/Log/SignIn/Signin'
 import { Route, Routes } from 'react-router-dom'
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute'
 import PublicRoute from './Components/PublicRoute/PublicRoute'
 import DashStack from './Pages/Home/DashboardPage/DashStack'
-import Error from "./Components/Error/Error"
 import './App.css'
 import Favorites from './Pages/Favorites/Favorites'
 import OrderList from './Pages/OrderList/OrderList'
