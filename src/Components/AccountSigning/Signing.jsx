@@ -196,7 +196,7 @@ const Signing = ({
                             className="bottomLink xl:flex gap-1 py-3 text-sm text-center"
                         >
                             <p className="inline text-gray-500">already have an account?</p>
-                            <Link to={'/login'} className="text-cyan-800 underline">
+                            <Link to={'/login'} className="text-cyan-800 underline z-100">
                                 Login
                             </Link>
                         </div>
