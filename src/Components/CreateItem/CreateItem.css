@@ -9,4 +9,10 @@
       text-align: center;
     }
   }
+  .createImage {
+    width: 100px !important;
+  }
+}
+.createMain {
+  overflow-x: hidden;
 }

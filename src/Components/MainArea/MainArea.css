@@ -82,7 +82,7 @@ main {
       align-items: center !important;
     }
     .create {
-      width: 50% !important;
+      width: 55% !important;
       justify-content: none !important;
       align-items: center !important;
       a {
@@ -96,6 +96,10 @@ main {
     }
     .card {
       width: 80% !important;
+      padding: 10px !important;
+      .edit {
+        width: 400px;
+      }
     }
   }
 }

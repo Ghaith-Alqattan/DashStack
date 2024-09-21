@@ -4,3 +4,8 @@ input {
 .signCard {
   font-family: poppins;
 }
+@media screen and (max-width: 992px) {
+  input {
+    width: 100%;
+  }
+}

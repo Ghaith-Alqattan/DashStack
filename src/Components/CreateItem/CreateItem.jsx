@@ -69,8 +69,8 @@ const CreateItem = () => {
             <main
                 className={
                     theme === 'dark'
-                        ? 'h-5/6 w-5/6 absolute bottom-0 right-0  p-5 bg-slate-900 theme'
-                        : 'h-5/6 w-5/6 absolute bottom-0 right-0  p-5 theme'
+                        ? 'createMain h-5/6 w-5/6 absolute bottom-0 right-0  p-5 bg-slate-900 theme'
+                        : 'createMain h-5/6 w-5/6 absolute bottom-0 right-0  p-5 theme'
                 }
             >
                 <div className="topTitle">
@@ -148,7 +148,7 @@ const CreateItem = () => {
                             ) : (
                                 <RiShare2Line className="text-cyan-600 cursor-pointer hidden w-20" />
                             )}
-                            <img src={productImage} className="w-40" />
+                            <img src={productImage} className="createImage w-40" />
                             <p
                                 className={theme === 'dark' ? 'text-white' : ''}
                                 style={

@@ -6,7 +6,7 @@ import axios from 'axios'
 import FormData from 'form-data'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-
+import "./AccountLogin.css"
 const AccountLogin = ({
     cardTitle,
     cardPara,
@@ -59,7 +59,7 @@ const AccountLogin = ({
         <>
             <ToastContainer autoClose={3000} newestOnTop={true} />
             <div
-                className={'signCard bg-white rounded-xl xl:p-10 xs:p-2 flex flex-col gap-5 xs-m-4'}
+                className={'signCard bg-white rounded-xl p-2 xs:p-2 flex flex-col gap-5 m-5'}
             >
                 <div className="title flex-col py-3 w-full">
                     <h4 className="font-bold text-center text-2xl">{cardTitle}</h4>
@@ -115,7 +115,7 @@ const AccountLogin = ({
                             className="w-full p-2 text-white bg-cyan-800 rounded-lg cursor-pointer font-bold"
                         />
                         <div
-                            className="bottomLink w-full text-sm flex gap-1 py-3"
+                            className="bottomLink w-full text-sm flex  gap-1 py-3 "
                         >
                             <p className="inline text-gray-500 ">Don't have an account?</p>
                             <Link to={'/Signup'} className="text-cyan-800 underline">

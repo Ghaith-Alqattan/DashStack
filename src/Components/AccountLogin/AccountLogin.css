@@ -1,0 +1,9 @@
+@media screen and (max-width: 992px) {
+  .card {
+    padding: 3px !important;
+  }
+  .bottomLink {
+    flex-direction: column;
+    align-items: center;
+  }
+}

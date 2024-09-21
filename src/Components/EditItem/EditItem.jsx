@@ -1,10 +1,11 @@
+import "./EditItem.css"
 import React, { useContext, useEffect, useState } from 'react'
 import { RiShare2Line } from 'react-icons/ri'
 import { Flip, toast, ToastContainer } from 'react-toastify'
 import ThemeContext from '../ThemeContext/ThemeContext'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import "./EditItem.css"
+
 const EditItem = () => {
     const navigate = useNavigate()
     const { theme } = useContext(ThemeContext)
@@ -32,8 +33,7 @@ const EditItem = () => {
     const dismiss = () => toast.dismiss(toastId.current)
 
     const fetchProduct = (id) => {
-        axios
-            .get(`http://vica.website/api/items/${id}`, config)
+        axios.get(`https://vica.website/api/items/${id}`, config)
             .then((response) => {
                 const { name, price, image_url } = response.data
                 setEditedProduct({ name, price, image_url })
@@ -41,6 +41,7 @@ const EditItem = () => {
             })
             .catch((err) => {
                 console.error(err)
+                toast.err("network Error")
             })
     }
 
@@ -65,7 +66,6 @@ const EditItem = () => {
 
     const handleEdit = (id) => {
         notify()
-
         const formData = new FormData()
         formData.append('name', editedProduct.name)
         formData.append('price', editedProduct.price)
@@ -75,7 +75,7 @@ const EditItem = () => {
         formData.append('_method', 'PUT')
 
         axios
-            .post(`http://vica.website/api/items/${id}`, formData, config)
+            .post(`https://vica.website/api/items/${id}`, formData, config)
             .then((response) => {
                 dismiss()
                 toast.success(String(response.data.message))
@@ -164,7 +164,7 @@ const EditItem = () => {
                                 <img
                                     src={imagePreview}
                                     alt="Product Preview"
-                                    className="w-40"
+                                    className="editImage w-1/4"
                                 />
                             ) : (
                                 <>
@@ -173,7 +173,7 @@ const EditItem = () => {
                                         className="text-cyan-600 cursor-pointer"
                                     />
                                     <p className={theme === 'dark' ? 'text-white' : ''}>
-                                        Upload Product Image
+                                        Loading product Image
                                     </p>
                                 </>
                             )}

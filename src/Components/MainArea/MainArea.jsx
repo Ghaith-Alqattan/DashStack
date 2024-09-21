@@ -76,7 +76,7 @@ const MainArea = ({ title, btn, btnShow }) => {
         if (deletingId) {
             notify()
             axios
-                .delete(`http://vica.website/api/items/${deletingId}`, config)
+                .delete(`https://vica.website/api/items/${deletingId}`, config)
                 .then((response) => {
                     dismiss()
                     toast.success(String(response.data.message))
@@ -168,12 +168,12 @@ const MainArea = ({ title, btn, btnShow }) => {
                             <li
                                 className={
                                     theme === 'dark'
-                                        ? 'card w-1/5 h-72 shrink-0 shadow-xl bg-slate-800 flex flex-col p-5 rounded-xl theme justify-around'
-                                        : 'card w-1/5 h-72 shrink-0 shadow-xl bg-white flex flex-col p-5 rounded-xl theme justify-around'
+                                        ? 'card w-1/5 h-64 shrink-0 shadow-xl bg-slate-800 flex flex-col p-5 pb-2 rounded-xl theme justify-around'
+                                        : 'card w-1/5 h-64 shrink-0 shadow-xl bg-white flex flex-col p-5 pb-2 rounded-xl theme justify-around'
                                 }
                                 key={element.id}
                             >
-                                <div className="image flex justify-center items-center ">
+                                <div className="image w-full h-1/4 flex justify-center items-center ">
                                     <img
                                         src={element.image_url}
                                         className="w-24 p-0"

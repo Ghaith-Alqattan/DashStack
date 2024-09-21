@@ -66,7 +66,7 @@ const NavBar = ({ onSearch, links }) => {
                         <img
                             src={JSON.parse(localStorage.getItem('profile_image_url'))}
                             alt=""
-                            className="rounded-full w-20"
+                            className="userImage rounded-full w-20"
                         />
                         <div className="user">
                             <p className={theme === 'dark' ? 'name text-white' : `name`}>

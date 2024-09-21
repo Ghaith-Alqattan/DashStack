@@ -9,4 +9,7 @@
   .subEdit {
     margin-top: 20px !important;
   }
+  .editImage {
+    width: 100px !important;
+  }
 }
