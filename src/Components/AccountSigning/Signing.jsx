@@ -190,13 +190,13 @@ const Signing = ({
                         <input
                             type="submit"
                             value={sub}
-                            className="w-full p-2 text-white rounded-lg cursor-pointer font-bold"
+                            className="w-full p-2 text-white bg-cyan-800 rounded-lg cursor-pointer font-bold"
                         />
                         <div
                             className="bottomLink xl:flex gap-1 py-3 text-sm text-center"
                         >
                             <p className="inline text-gray-500">already have an account?</p>
-                            <Link to={'/login'} className="text-cyan-800 underline z-100">
+                            <Link to={'/login'} className="text-cyan-800 underline">
                                 Login
                             </Link>
                         </div>

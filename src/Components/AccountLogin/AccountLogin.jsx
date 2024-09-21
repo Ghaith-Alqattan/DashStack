@@ -112,7 +112,7 @@ const AccountLogin = ({
                         <input
                             type="submit"
                             value={sub}
-                            className="w-full p-2 text-white rounded-lg cursor-pointer font-bold"
+                            className="w-full p-2 text-white bg-cyan-800 rounded-lg cursor-pointer font-bold"
                         />
                         <div
                             className="bottomLink w-full text-sm flex gap-1 py-3"
